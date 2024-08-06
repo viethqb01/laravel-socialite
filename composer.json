@@ -1,0 +1,23 @@
+{
+    "name": "viethqb/laravel-socialite",
+    "description": "Laravel Socicalite By Viethqb",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1|^8.2",
+        "illuminate/support": "10.x-dev",
+        "laravel/socialite": "^6.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Viethqb\\LaravelSocialite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "viethqb",
+            "email": "viethqb01@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
