@@ -6,6 +6,7 @@
 namespace Viethqb\LaravelSocialite\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Laravel\Socialite\Facades\Socialite;
 use Viethqb\LaravelSocialite\BaseService;
 use Viethqb\LaravelSocialite\Contract\SocialiteInterface;
 
@@ -27,7 +28,6 @@ class SocialiteServiceProvider extends ServiceProvider
      */
     protected function publishConfig(): void
     {
-        // merge config to service.php
         $this->mergeConfigFrom(
             __DIR__.'/../config/socialite-base.php',
             'services'
@@ -39,5 +39,6 @@ class SocialiteServiceProvider extends ServiceProvider
         // Publish BaseService
         $servicePath = __DIR__ . '/../Publish/SocialiteService.php';
         $this->publishes([$servicePath => app_path('Base/Service/SocialiteService.php')], 'base');
-    }    
+    }
+
 }
