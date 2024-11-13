@@ -22,7 +22,7 @@ class BaseService implements SocialiteInterface
 
     /**
      * @Author apple
-     * @Date Aug 05, 2024
+     * @Date Nov 13, 2024
      *
      * @param SocialiteEnum $provider
      * @return RedirectResponse|\Illuminate\Http\RedirectResponse
