@@ -4,7 +4,7 @@
  * @Date Aug 05, 2024
  */
 
-namespace Viethqb\LaravelSocialite\Publish;
+namespace App\Base\Service;
 
 use Viethqb\LaravelSocialite\BaseService;
 

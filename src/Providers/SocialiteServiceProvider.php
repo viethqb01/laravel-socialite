@@ -38,6 +38,6 @@ class SocialiteServiceProvider extends ServiceProvider
     {
         // Publish BaseService
         $servicePath = __DIR__ . '/../Publish/SocialiteService.php';
-        $this->publishes([$servicePath => app_path('Base/SocialiteService.php')], 'base');
+        $this->publishes([$servicePath => app_path('Base/Service/SocialiteService.php')], 'base');
     }    
 }

@@ -11,7 +11,7 @@ composer require viethqb/laravel-socialite
 ## Publish configuration file and Base Classes
 
 ```shell
-php artisan vendor:publish --provider="Viethqb\LaravelSocialite\Providers\SocialiteServiceProvider"
+php artisan vendor:publish --provider="Viethqb\LaravelSocialite\Providers\SocialiteServiceProvider" --tag="base"
 ```
 
 ## create file .env
