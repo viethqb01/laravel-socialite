@@ -36,7 +36,7 @@ GITHUB_SECRET=your-github-client-secret
 GITHUB_REDIRECT=http://your-app-url/auth/github/callback
 ```
 
-## Add config to file config/services/php
+## Add config to file config/services.php
 ```shell
    'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
