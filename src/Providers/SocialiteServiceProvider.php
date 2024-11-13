@@ -19,6 +19,7 @@ class SocialiteServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishConfig();
+        $this->publishBaseClasses();
     }
 
     /**
@@ -26,8 +27,11 @@ class SocialiteServiceProvider extends ServiceProvider
      */
     protected function publishConfig(): void
     {
-        $configPath = __DIR__ . '/../config/socialite-base.php';
-        $this->publishes([$configPath => config_path('socialite-base.php')], 'config');
+        // merge config to service.php
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/socialite-base.php',
+            'services'
+        );
     }
 
     public function publishBaseClasses(): void
